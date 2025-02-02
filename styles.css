@@ -1,0 +1,187 @@
+/* Center everything */
+body {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #e57d7d;
+    height: 300vh; /* Full height of viewport */
+    flex-direction: column;   /* Stack elements */
+}
+h1 {
+    height: 50px; /* Adjust as needed */
+    display: flex; /* Optional: Center text vertically */
+    align-items: center;
+}
+body.home-page{
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    background-color: black;
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Full height of the viewport */
+}
+
+h1 {
+    font-size: 3rem;  /* Large text */
+    -webkit-text-stroke: 2px rgb(231, 119, 119); /* Outline thickness and color */
+    color: white; /* Text color */
+}
+
+body.next-page {
+    display: flex;
+    background-image:url('images/next\ page\ background.jpg');;
+    flex-direction: column;
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    height: 100vh; /* Ensure full viewport height */
+    text-align: center; /* Keep text centered */
+}
+
+body.next-page h1 {
+    color: rgb(230, 123, 123);  /* Set text color */
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 2px white; /* Outline thickness and color */
+    font-size: 70px; /* Adjust size */
+    font-style: bold;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Add a slight delay for effect */
+}
+
+body.no {
+    display: flex;
+    background-image: url('images/imposing batman.jpg'); /* Use forward slash */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    flex-direction: column;
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    height: 100vh; /* Ensure full viewport height */
+    text-align: center; /* Keep text centered */
+}
+
+body.no h1 {
+    color: rgb(255, 0, 0);  /* Set text color */
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 2px rgb(0, 0, 0); /* Outline thickness and color */
+    font-size: 70px; /* Adjust size */
+    font-style: bold;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Add a slight delay for effect */
+}
+
+body.yes {
+    display: flex;
+    background-image: url('images/happy batman.jpg'); /* Use forward slash */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    flex-direction: column;
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    height: 100vh; /* Ensure full viewport height */
+    text-align: center; /* Keep text centered */
+}
+
+body.yes h1 {
+    color: rgb(255, 0, 0);  /* Set text color */
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 2px rgb(0, 0, 0); /* Outline thickness and color */
+    font-size: 70px; /* Adjust size */
+    font-style: bold;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Add a slight delay for effect */
+}
+
+body.options {
+    display: flex;
+    background-image: url('images/options.jpg'); /* Use forward slash */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    flex-direction: column;
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    height: 100vh; /* Ensure full viewport height */
+    text-align: center; /* Keep text centered */
+}
+
+body.options h1 {
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 2px rgb(0, 0, 0); /* Outline thickness and color */
+    font-size: 70px; /* Adjust size */
+    font-style: bold;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Add a slight delay for effect */
+}
+
+body.options {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center text vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.left-text {
+    margin-left: 20px; /* Optional: Adjust the left text */
+    color: rgb(187, 54, 52);  /* Set text color */
+}
+
+.right-text {
+    margin-right: 20px; /* Optional: Adjust the right text */
+    color: rgb(234, 234, 234);  /* Set text color */
+}
+
+
+
+
+
+/* Style the button */
+button {
+    height: 80px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20%;;
+    background-color: rgb(255, 255, 255);
+    color:#e57d7d
+}
+button:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    transition: transform 0.2s ease-in-out;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation */
+h1, p {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
